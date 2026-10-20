@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Impacto de Deus Design System — base.
+ * Fundo escuro por padrão (preto); seções claras usam papel.
+ */
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* offset para o header fixo de 68px ao navegar por âncoras */
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0b;
+  font-family: var(--font-body), Montserrat, system-ui, sans-serif;
+  color: #242323;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #f8a010;
+  color: #1a1919;
+}
+
+/* Faixa de navegação com scroll horizontal no mobile — scrollbar oculta */
+.idd-scroll::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.idd-scroll {
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-rise,
+  .animate-glow,
+  .animate-fade {
+    animation: none !important;
+  }
+  .animate-glow {
+    opacity: 0.7 !important;
+  }
+}
