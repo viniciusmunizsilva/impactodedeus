@@ -40,16 +40,8 @@ export default function Construcao() {
           Impacto de Deus
         </span>
 
-        <div
-          className="animate-rise mt-9 flex items-center gap-3 font-display text-xs font-semibold uppercase tracking-[.22em] text-amarelo-400"
-          style={{ animationDelay: ".12s" }}
-        >
-          <span className="inline-block h-px w-[28px] bg-amarelo-500" />
-          Grupo de oração católico
-        </div>
-
         <h1
-          className="animate-rise m-0 mt-5 font-poster uppercase leading-[.9] tracking-[-.01em] text-branco"
+          className="animate-rise m-0 mt-9 font-poster uppercase leading-[.9] tracking-[-.01em] text-branco"
           style={{ fontSize: "clamp(40px,9vw,104px)", animationDelay: ".18s" }}
         >
           Site em <span className="text-amarelo-500">construção</span>
